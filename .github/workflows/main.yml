@@ -1,2 +1,11 @@
 name : Рабочий процесс для моего файла Hello World 
 на : push
+jobs :
+   build :
+     name : Привет, мир, действие 
+    выполняется : ubuntu-последние 
+    шаги :
+      - использует : actions / checkout @ v1 
+      - использует : ./action-a 
+        с :
+           MY_NAME : " Mona "
